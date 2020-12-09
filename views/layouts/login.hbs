@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>ScheduleIt Login</title>
+</head>
+
+<body class="login">
+    <div class="context">
+        <nav class="white" id="loginNav">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center"
+                    style="color: black; font-family: 'Righteous', cursive;">SCHEDULEIT <i
+                        class="fa fa-calendar"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"
+                        style="color: black;"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/profile">About ScheduleIt</a></li>
+                    <li><a href="/assignments">Contact Us</a></li>
+                    <li><a href="/auth/logout">References</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/profile">About ScheduleIt</a></li>
+            <li><a href="/assignments">Contact Us</a></li>
+            <li><a href="/auth/logout">References</a></li>
+        </ul>
+
+        <div class="container login-container">
+            <div class="card">
+
+                <div class="card-content">
+
+                    {{{body}}}
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12 center">
+                        <h5 class="white-text">Schedule Coursework With Ease</h5>
+                        <p class="grey-text text-lighten-4">ScheduleIt is a dedicated platform for students to prepare
+                            and plan for their assignments.</p>
+                    </div>
+                    <div class="col l6 s12 center">
+                        <h5 class="white-text">Scheduleit Links And Resources</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2020 ScheduleIt
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+
+            M.Sidenav.init(document.querySelector('.sidenav'));
+
+        </script>
+
+
+
+
+</body>
+
+</html>

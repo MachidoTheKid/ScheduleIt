@@ -1,0 +1,91 @@
+<div class="container" id="profile-container">
+
+    <div class="row">
+
+        <div class="col s4 center" id="userInfo">
+            <h2>Welcome {{name}}</h2>
+            <img src="{{image}}" alt="profile picture" id="profilePic">
+        </div>
+
+        <div class="col s8">
+
+            {{#if assignments}}
+
+            <div class="assignmentTable" id="profileTable">
+
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Module</th>
+                            <th scope="col">Progress</th>
+                            <th scope="col">Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each assignments}}
+
+                        <tr>
+                            <!--<th scope="row">1</th>-->
+                            <td><a href="/assignments/{{_id}}">{{title}}</a></td>
+                            <td>{{module}}</td>
+                            <td>{{assignmentProgress}}</td>
+                            <td>{{dueDate}}</td>
+                            <td>
+                                <a href="/assignments/edit/{{_id}}" id="editor" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-pen-square"></i>
+                                </a>
+                            </td>
+                            <td>
+
+                                <form method="post" role="form" action='/assignments/{{_id}}' id="delete">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit" class="btn red">
+                                        <i class="fas fa-calendar-minus" style="color: white;"></i>
+                                    </button>
+
+
+
+                                </form>
+
+                            </td>
+                        </tr>
+
+
+                        {{/each}}
+
+
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+
+
+
+            {{else}}
+            <div class="container center">
+                <p>You Have No Assignments Created Yet</p>
+                <p>Click The Button Below To Get Started</p>
+                <div class="buttonfield">
+                    <a href="/assignments/add" class="btn-floating btn-large wave-effect waves-light cyan"
+                        style="color: black;"><i class="fas fa-plus"></i></a>
+
+                </div>
+            </div>
+
+
+
+            {{/if}}
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
