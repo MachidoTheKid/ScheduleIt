@@ -3,6 +3,8 @@ ScheduleIt is a private website dedicated for students to schedule and manage th
 
 In order to run the web app, download the folder. Open up a terminal in VS Code and type npm install. Once the modules have been installed, type in the command npm run devRun. The app should start up on localhost:3000.
 
+The Website currently works with Google Authentication.
+
 The web app was developed using NodeJS and a number of different frameworks like:
 -Express
 -Handlebars
